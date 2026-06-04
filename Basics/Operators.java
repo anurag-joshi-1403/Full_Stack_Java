@@ -29,5 +29,15 @@ public class Operators {
         System.out.println(b != a);
         System.out.println(a > b);
         System.out.println( a < b);
+
+        System.out.println("=====Logical Operators=====");
+        int age = 21;
+        System.out.println(age > 18 && age < 30);
+        // OR (||) Operator is used.
+        int age2 = 16;
+        System.out.println(age < 18 || age > 60);
+        // NOT (!) operator is used
+        boolean pass = true;
+        System.out.println(!pass);
     }
 }
