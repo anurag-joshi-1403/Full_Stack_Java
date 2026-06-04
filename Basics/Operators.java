@@ -14,5 +14,15 @@ public class Operators {
         System.out.println("Division of a and b :" + div);
         System.out.println("Modulo of a and b :" + mod);
 
+        System.out.println("Unary Operators");
+        a++;
+        System.out.println("Increment(++) :" + a);
+        b--;
+        System.out.println("Decrement(--) : " + b);
+        ++a;
+        System.out.println("Pre-Increment(++a) : " + a);
+        --b;
+        System.out.println("Post-Increment : " +b);
+
     }
 }
