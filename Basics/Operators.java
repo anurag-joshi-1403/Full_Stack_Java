@@ -39,5 +39,12 @@ public class Operators {
         // NOT (!) operator is used
         boolean pass = true;
         System.out.println(!pass);
+
+        System.out.println("=====Assignment Operators=====");
+        int z = 21;
+        System.out.println(z += 4);
+        System.out.println(z -= 4);
+        System.out.println(z *= 4);
+        System.out.println(z /= 4);
     }
 }
