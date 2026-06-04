@@ -1,1 +1,1 @@
-# Full_Stack_Java
+# Core JAVA
