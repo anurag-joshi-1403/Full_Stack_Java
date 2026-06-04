@@ -1,6 +1,6 @@
 public class Operators {
     public static void main(String[] args){
-        System.out.println("Arithmetic Operators");
+        System.out.println("======Arithmetic Operators=======");
         int a = 19;
         int b = 11;
         int sum = a + b;
@@ -14,7 +14,7 @@ public class Operators {
         System.out.println("Division of a and b :" + div);
         System.out.println("Modulo of a and b :" + mod);
 
-        System.out.println("Unary Operators");
+        System.out.println("======Unary Operators========");
         a++;
         System.out.println("Increment(++) :" + a);
         b--;
@@ -24,5 +24,10 @@ public class Operators {
         --b;
         System.out.println("Post-Increment : " +b);
 
+        System.out.println("===== Relational Operators=====");
+        System.out.println(a ==b);
+        System.out.println(b != a);
+        System.out.println(a > b);
+        System.out.println( a < b);
     }
 }
