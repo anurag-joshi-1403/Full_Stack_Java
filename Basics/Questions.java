@@ -32,5 +32,23 @@ public class Questions {
             fact = fact * i;
         }
         System.out.println("Factorial of 5 : "+fact);
+
+        // Reverse Numbers
+        int num = 1234;
+        while(num > 0){
+            int digit = num % 10;
+            System.out.print(digit);
+            num = num / 10;
+        }
+
+        // Count Digits
+        int num2 =12345;
+        int count =0;
+
+        while(num2 > 0){
+            count++;
+            num2 = num2/10;
+        }
+        System.out.println(count);
     }
 }
