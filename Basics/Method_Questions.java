@@ -19,6 +19,15 @@ public class Method_Questions {
         return a + b;
     }
 
+    // Factorial Using Method
+    static int factorial(int f){
+        int fact = 1;
+        for(int i =1; i <= f; i++){
+            fact *= i;
+        }
+        return fact;
+    }
+
     public static void main(String[] args) {
         int n = 123;
         System.out.println("First digit: " + firstdigit(n));
@@ -26,5 +35,8 @@ public class Method_Questions {
 
         int result = add(10, 20);
         System.out.println(result);
+
+        // Factorial 
+        System.out.println("Factorial of n : " +factorial(5));
     }
 }
