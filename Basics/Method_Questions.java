@@ -28,6 +28,17 @@ public class Method_Questions {
         return fact;
     }
 
+    // Find Square of a number
+    static int square(int s){
+        return s * s;
+    }
+
+    //  Finding Area of circle
+    static float circleArea(float r){
+        float pi = 3.14f;
+        return pi * r * r;
+    }
+
     public static void main(String[] args) {
         int n = 123;
         System.out.println("First digit: " + firstdigit(n));
@@ -38,5 +49,11 @@ public class Method_Questions {
 
         // Factorial 
         System.out.println("Factorial of n : " +factorial(5));
+
+        // Square value
+        System.out.println("Square of number :" +square(5));
+
+        // Area of circle
+        System.out.println("Area of circle :" + circleArea(2));
     }
 }
