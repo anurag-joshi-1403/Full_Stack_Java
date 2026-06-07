@@ -54,6 +54,16 @@ public class Arrays {
         }
         System.out.println("Largest Element: " +max);
 
+        // Find smallest Value
+        int s[] = {22,33,11,1,-1,3};
+        int min = s[0];
+        
+        for(int i=1; i<s.length; i++){
+            if(s[i] < min){
+                min = s[i];
+            }
+        }
+        System.out.println("Smallest number : "+min);
 
     }
 
