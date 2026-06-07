@@ -44,6 +44,17 @@ public class Arrays {
         }
         System.out.println(add);
 
+        // Find Largest Element
+        int l[] = {11,33,22,55,88};
+        int max = l[0];
+        for(int i = 1; i< l.length; i++){
+            if(l[i] > max){
+                max = l[i];
+            }
+        }
+        System.out.println("Largest Element: " +max);
+
+
     }
 
 }
