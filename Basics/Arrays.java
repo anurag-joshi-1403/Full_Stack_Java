@@ -64,7 +64,17 @@ public class Arrays {
             }
         }
         System.out.println("Smallest number : "+min);
+        
 
+        // Find Average of array elements.
+        int arr1[] = {1,2,3,4,5};
+        int sum1 = 0;
+        System.out.println("Find Average of Array Elements...");
+        for(int i =0; i< arr1.length; i++){
+            sum1 = sum1 + arr1[i];
+        }
+        double average = (double)sum1 / arr1.length;
+        System.out.println(average);
     }
 
 }
