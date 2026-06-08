@@ -75,6 +75,22 @@ public class Arrays {
         }
         double average = (double)sum1 / arr1.length;
         System.out.println(average);
+
+        // Find Second Largest Element
+        int[] arr2 = {10,50,30,90,70};
+        int largest = Integer.MIN_VALUE;
+        int secondlargest = Integer.MIN_VALUE;
+
+        for(int i =0; i <arr2.length; i++){
+            if(arr2[i] > largest){
+                secondlargest = largest;
+                largest = arr2[i];
+            }
+            else if(arr2[i] > secondlargest && arr[i] != largest){
+                secondlargest =arr2[i];
+            }
+        }
+        System.out.println("Second Largest : " + secondlargest);
     }
 
 }
