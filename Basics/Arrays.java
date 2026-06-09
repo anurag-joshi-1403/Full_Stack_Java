@@ -100,9 +100,28 @@ public class Arrays {
                 break;
             }
         }
-        if(!found){
+        if (!found) {
             System.out.println("Not Found...");
         }
+
+        // Remove Duplicate Elements
+        int[] arr4 = { 10, 20, 30, 20, 40, 10, 50 };
+        int empty = 0;
+        for (int i = 0; i < arr4.length; i++) {
+            boolean skip = false;
+            for (int j = 0; j < i; j++) {
+
+                if (arr4[i] == arr4[j]) {
+                    empty = arr4[i];
+                    skip=true;
+                    break;
+                } 
+            }
+            if(!skip){
+                System.out.print(+arr4[i] + " ");
+            }
+        }
+
     }
 
 }
