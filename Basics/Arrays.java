@@ -151,6 +151,18 @@ public class Arrays {
             System.out.println(arr5[i] +" -> " +count);
         }
 
+        // Pair Problems
+        // 1 : Find Pair with Given Sum.
+        int[] arr6 = {2,7,11,15};
+        int target2 = 9;
+
+        for(int i =0; i< arr6.length; i++){
+            for(int j=i +1; j<arr6.length; j++){
+                if(arr6[i] + arr6[j] == target2){
+                    System.out.println(arr6[i] + "+" + arr6[j] + " = " + target2);
+                }
+            }
+        }
     }
 
 }
