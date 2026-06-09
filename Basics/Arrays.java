@@ -121,6 +121,35 @@ public class Arrays {
                 System.out.print(+arr4[i] + " ");
             }
         }
+        System.out.println();
+
+        // Find Frequency of Elements...
+        int[] arr5 = {10,20,30,20,10};
+        System.out.println("Find Frequency of Elements...");
+
+
+        for(int i =0; i< arr5.length; i++){
+            boolean visited = false;
+            for(int k=0; k <i ;k++){
+                if(arr5[i] == arr5[k]){
+                    visited = true;
+                    break;
+                }
+            }
+            // Skip Duplicate Elements
+            if(visited){
+                continue;
+            }
+
+            // Counting of elements
+            int count = 0;
+            for(int j=0; j <arr5.length; j++){
+                if(arr5[i] == arr5[j]){
+                    count++;
+                }
+            }
+            System.out.println(arr5[i] +" -> " +count);
+        }
 
     }
 
