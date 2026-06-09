@@ -163,6 +163,18 @@ public class Arrays {
                 }
             }
         }
+
+        // 2 : Count Total Pairs...
+        int[] arr7 = {1,2,3,4};
+        int count =0;
+
+        for(int i=0; i <arr7.length; i++){
+            for(int j=i+1; j<arr7.length; j++){
+                System.out.println(("(" + arr7[i] + ", "+ arr7[j] + ")"));
+                count++;
+            }
+        }
+        System.out.println("Total count Pairs:" + count);
     }
 
 }
