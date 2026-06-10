@@ -62,6 +62,36 @@ public class TwoD_Array {
             }
             System.out.println();
         }
+        // -----------------------------------------------------------
+        // Matrix Multiplication...
+        int m[][]= {
+            {1,2,3},
+            {3,2,1},
+            {1,1,1}
+        };
+        int n[][] ={
+            {3,2,1},
+            {1,2,3},
+            {1,1,1}
+        };
+        int p[][] = new int[3][3];
+
+        // Matrix multiplication: p = m * n
+        for(int i=0; i<3; i++){
+            for(int j=0; j<3; j++){
+                p[i][j] = 0;
+                for(int k=0; k<3; k++){
+                    p[i][j] += m[i][k] * n[k][j];
+                }
+            }
+        }
+
+        for(int i=0; i<3; i++){
+            for(int j=0; j<3; j++){
+                System.out.print(p[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
 
 }
