@@ -9,33 +9,59 @@ public class TwoD_Array {
                 { 70, 80, 90 }
         };
         // Control Rows
-        for(int i =0; i<3; i++){
+        for (int i = 0; i < 3; i++) {
             // Control Columns
-            for(int j=0; j<3; j++){
+            for (int j = 0; j < 3; j++) {
                 System.out.print(arr[i][j] + " ");
             }
             System.out.println();
         }
-
+// ----------------------------------------------------------------------
         // Taking Input In 2D Array
         Scanner sc = new Scanner(System.in);
         int array2[][] = new int[2][2];
 
         // This two loop is used to take input
-        for(int i=0; i<2; i++){
-            for(int j=0; j<2; j++){
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 2; j++) {
                 array2[i][j] = sc.nextInt();
-
             }
         }
-        // This two loop is used to print 
-        for(int i=0; i<2; i++){
-            for(int j=0; j<2; j++){
+        // This two loop is used to print
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 2; j++) {
                 System.out.print(array2[i][j] + " ");
             }
             System.out.println();
         }
         sc.close();
+// ---------------------------------------------------------------------
+        // Matrix Addition
+        System.out.println("Matrix Addition....");
+        int a[][] = {
+                { 1, 2 },
+                { 3, 4 }
+        };
+        int b[][] = {
+                { 5, 6 },
+                { 7, 8 }
+        };
+
+        int c[][] = new int[2][2];
+        
+
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 2; j++) {
+                c[i][j] = a[i][j] + b[i][j];
+            }
+        }
+
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 2; j++) {
+                System.out.print(c[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
 
 }
