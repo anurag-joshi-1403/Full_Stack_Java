@@ -175,6 +175,15 @@ public class Arrays {
             }
         }
         System.out.println("Total count Pairs:" + count);
+
+        // Find All Pair Sum
+        int[] arr8 = {1,2,3};
+        for(int i=0; i<arr8.length; i++){
+            for(int j = i+1; j<arr8.length; j++){
+                int sum8 = arr8[i] + arr8[j];
+                System.out.println(arr8[i] + " + "+ arr8[j]+ " = "+ sum8);
+            }
+        }
     }
 
 }
