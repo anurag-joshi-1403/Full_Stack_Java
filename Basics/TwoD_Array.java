@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class TwoD_Array {
     public static void main(String[] args) {
         // 2D Array Example...
@@ -15,6 +17,25 @@ public class TwoD_Array {
             System.out.println();
         }
 
+        // Taking Input In 2D Array
+        Scanner sc = new Scanner(System.in);
+        int array2[][] = new int[2][2];
+
+        // This two loop is used to take input
+        for(int i=0; i<2; i++){
+            for(int j=0; j<2; j++){
+                array2[i][j] = sc.nextInt();
+
+            }
+        }
+        // This two loop is used to print 
+        for(int i=0; i<2; i++){
+            for(int j=0; j<2; j++){
+                System.out.print(array2[i][j] + " ");
+            }
+            System.out.println();
+        }
+        sc.close();
     }
 
 }
