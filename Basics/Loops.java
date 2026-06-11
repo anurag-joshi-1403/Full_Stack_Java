@@ -44,6 +44,13 @@ public class Loops {
             ans++;
         }
         System.out.println(ans);
+// --------------------------------------------------------------------------
+        System.out.println("Printing a vertical line(Columns)....");
+        int z = 1;
+        while(z <=5){
+            System.out.print("* ");
+            z++;
+        }
 
     }
 }
